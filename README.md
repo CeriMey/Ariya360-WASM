@@ -103,7 +103,7 @@ Ariya360 propose des matériaux et des réglages d’apparence, avec navigation 
 
 Dans l’espace **Simulation**, préparez une étude de contrainte statique : matériau, faces fixes, chargement et maillage. Lancez le calcul et explorez les résultats.
 
-Le solveur mécanique de cette version s’exécute **directement dans le navigateur**. L’exemple **Support de palier** fournit une pièce concrète pour commencer ; un maillage linéaire de **10 mm** a été vérifié sur cet exemple.
+Le solveur mécanique de cette version s’exécute **directement dans le navigateur**. L’exemple **Support de palier** fournit une pièce concrète pour commencer. Le cas de contrainte statique testé sur cet exemple n’a pas convergé avec les maillages linéaires de **3 mm** et de **10 mm**.
 
 Pour découvrir le parcours : ouvrez le modèle, préparez votre étude, choisissez vos conditions et examinez le résultat. La complexité du maillage et la mémoire du navigateur déterminent la taille des études réalisables.
 
@@ -213,11 +213,13 @@ La présentation, les descriptions des vidéos, la FAQ et le ticket de signaleme
 
 ### Où sont enregistrés mes projets ?
 
-Le runtime utilise un système de fichiers virtuel et le stockage du navigateur. Cette démo ne fournit pas de synchronisation cloud des projets. Enregistrez ou exportez une copie de votre travail lorsque le parcours le permet ; effacer les données du site peut supprimer les données conservées localement.
+Cliquez dans la vue du document pour y activer les raccourcis clavier. **Enregistrer / Ctrl+S** télécharge un fichier `.swcad` sur votre ordinateur : donnez-lui un nom puis cliquez sur **Télécharger**. Chaque nouvel enregistrement télécharge la version courante. Le dossier de destination dépend des réglages de téléchargement du navigateur.
+
+Pour reprendre votre travail, même après fermeture de la page, utilisez **Ouvrir / Ctrl+O**, choisissez le fichier `.swcad` sur votre ordinateur puis cliquez sur **Ouvrir**. Les fichiers sont lus et produits localement dans le navigateur, sans envoi à un serveur. Les préférences peuvent rester dans le stockage du navigateur ; conservez vos fichiers téléchargés pour retrouver vos projets.
 
 ### Quelles sont les limites de cette version web ?
 
-Ariya360 est en développement. La mémoire disponible et la complexité des modèles limitent les opérations. Pour une simulation trop lourde, augmentez la taille des éléments ou choisissez un maillage linéaire. Certains services natifs, dont la récupération en arrière-plan et l’ouverture asynchrone des projets, restent à adapter au navigateur.
+Ariya360 est en développement. La mémoire disponible et la complexité des modèles limitent les opérations. Pour une simulation trop lourde, augmentez la taille des éléments ou choisissez un maillage linéaire. La récupération automatique des documents après interruption du runtime natif reste à adapter au navigateur.
 
 ## Un bug ? Aidez-nous à améliorer l’atelier
 
